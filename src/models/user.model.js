@@ -52,7 +52,7 @@ userSchema.pre("save", async function(next){
 
 if(!this.isModified("password")) return next(); // agr password m chnge nhi h toh kuch mt kro
 
-    this.password = bcrypt.hash(this.password,10) //hashing 10round
+    this.password = bcrypt.hash(this.password,10) //hashing
     next();
 })
 
