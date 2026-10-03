@@ -36,5 +36,5 @@ const videoSchema = new mongoose.Schema({
     }
 },{timestamps:true})
 
-videoSchema.plugin(mongooseAggregatePaginate)  // Aggregation queries ke saath pagination ki functionality add karta hai
+videoSchema.plugin(mongooseAggregatePaginate)  // Aggregation queries ke saath pagination(page m divide krta h) ki functionality add karta hai
 export const Video = mongoose.model("Video",videoSchema) 
